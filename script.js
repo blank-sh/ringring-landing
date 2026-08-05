@@ -34,6 +34,13 @@
       if (altVal !== null) img.setAttribute("alt", altVal);
     });
 
+    // 언어별 스토어 링크
+    var links = document.querySelectorAll("[data-ko-href][data-en-href]");
+    links.forEach(function (link) {
+      var href = link.getAttribute("data-" + lang + "-href");
+      if (href !== null) link.setAttribute("href", href);
+    });
+
     // 토글 버튼 활성 표시
     var opts = document.querySelectorAll(".lang-opt");
     opts.forEach(function (opt) {
