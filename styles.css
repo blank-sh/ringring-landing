@@ -264,6 +264,7 @@ a { color: inherit; text-decoration: none; }
 
 
 /* ===== Coming soon ===== */
+.coming-soon { background: var(--surface); }
 .coming-soon-inner { text-align: center; max-width: 640px; }
 .coming-soon-ico {
   position: relative;
@@ -292,6 +293,24 @@ a { color: inherit; text-decoration: none; }
 .footer-brand strong { display: block; font-size: 17px; }
 .footer-brand span { display: block; font-size: 13px; color: rgba(255, 255, 255, 0.6); }
 .footer-soon { margin: 0; font-size: 14px; color: rgba(255, 255, 255, 0.75); }
+.footer-legal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 20px;
+}
+.footer-legal a {
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 13px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.footer-legal a:hover { color: #fff; }
+.footer-legal a:focus-visible {
+  outline: 3px solid rgba(255, 255, 255, 0.55);
+  outline-offset: 4px;
+}
 .footer-copy { margin: 0; font-size: 13px; color: rgba(255, 255, 255, 0.45); }
 
 /* ===== 입체 그래픽 — 떠다니는 그라데이션 오브 ===== */
